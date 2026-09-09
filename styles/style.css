@@ -85,7 +85,8 @@ h1{
     border: solid gray;
     padding: 10px;
     width: fit-content;
-
+    display: flex;
+    gap: 15px;
 }
 
 button {
@@ -116,11 +117,19 @@ button {
     padding: 15px 20px;
 }
 
+.botones2 .boton1 {
+    width: auto;              
+    white-space: nowrap;      
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .imagen_celular {
     width: 60%;
-    background-image: url(../assets/images/hojasFondo.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/images/hojasFondo.jpg);
     background-repeat: no-repeat;
-    background-size: 190%;
+    background-size: cover;
     background-position: center;
 }
 
@@ -340,4 +349,329 @@ footer p {
     gap: 20px;
     font-size: 18px;
     color: #302552;
+}
+
+/* media queries */
+
+/* Dispositivos hasta 1279px */
+
+@media (max-width: 1279px) {
+    .menu {
+        gap: 20px;
+    }
+
+    .menu a {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 65px;
+    }
+
+    .texto1 p {
+        font-size: 20px;
+    }
+
+    .imagen_celular img {
+        height: 450px;
+        margin: 120px 80px 40px;
+    }
+
+    .parte2 img {
+        width: 450px;
+    }
+
+    .cuadros {
+        gap: 15px;
+    }
+
+    .cuadro {
+        width: 280px;
+    }
+
+    footer {
+        padding: 20px 50px;
+    }
+}
+
+/* Dispositivos hasta 920px */
+
+@media (max-width: 920px) {
+    .menu a {
+        font-size: 16px;
+    }
+
+    .pagina1 {
+        align-items: center;
+    }
+
+    .texto1 {
+        width: 50%;
+        padding: 8% 5%;
+        gap: 30px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .texto1 p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .botones2 {
+        display: flex;
+        gap: 10px;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    .boton1, .boton2 {
+        width: auto;
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .imagen_celular {
+        width: 50%;
+    }
+
+    .imagen_celular img {
+        width: 100%;
+        height: auto;
+        max-width: 320px;
+        margin: 50px auto;
+    }
+
+    /* Parte 2 */
+    .pagina2 h2 {
+        font-size: 45px;
+    }
+
+    .parte2 {
+        gap: 40px;
+    }
+
+    .parte2 img {
+        width: 350px;
+    }
+
+    .texto2 p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .texto2 h3 {
+        font-size: 35px;
+    }
+
+    /* Parte 3 */
+    .pagina3 .descripcion-principal {
+        padding: 0 20px;
+    }
+
+    .cuadro {
+        width: 260px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px 30px;
+    }
+}
+
+/* Dispositivos hasta 768px */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+        gap: 15px;
+    }
+
+    .menu {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu a {
+        font-size: 15px;
+    }
+
+    /* Parte 1 */
+    .pagina1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .texto1 {
+        width: 85%;
+        padding: 40px 0;
+        align-items: center;
+    }
+
+    .texto1 p {
+        width: 100%;
+    }
+
+    .botones2 {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .boton1, .boton2 {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .imagen_celular {
+        width: 100%;
+        background-size: cover;
+    }
+
+    .imagen_celular img {
+        margin: 30px auto;
+        max-width: 280px;
+    }
+
+    /* Parte 2 */
+    .pagina2 {
+        padding: 40px 20px;
+    }
+
+    .parte2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .parte2 img {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .texto2 {
+        align-items: center;
+    }
+
+    /* Parte 3 */
+    .pagina3 h2 {
+        font-size: 40px;
+    }
+
+    .cuadros {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .cuadro {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+/* Dispositivos hasta 480px */
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 120px;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    .menu .download {
+        padding: 8px 12px;
+    }
+
+    /* Parte 1 */
+    h1 {
+        font-size: 38px;
+    }
+
+    .texto1 p {
+        font-size: 16px;
+    }
+
+    .botones2 {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .boton1, .boton2 {
+        width: auto;
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .imagen_celular img {
+        max-width: 220px;
+    }
+
+    /* Parte 2 */
+    .pagina2 h2 {
+        font-size: 32px;
+    }
+
+    .texto2 h3 {
+        font-size: 28px;
+    }
+
+    .texto2 h4 {
+        font-size: 20px;
+    }
+
+    .texto2 p {
+        font-size: 15px;
+    }
+
+    /* Parte 3 */
+    .pagina3 {
+        padding: 40px 15px;
+    }
+
+    .pagina3 h2 {
+        font-size: 32px;
+    }
+
+    .pagina3 .descripcion-principal {
+        font-size: 15px;
+    }
+
+    .cuadro {
+        width: 100%;
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px 15px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+
+    .redes {
+        gap: 15px;
+        font-size: 16px;
+    }
 }
