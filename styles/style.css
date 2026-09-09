@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*navegador*/
+body{
+    font-family:Arial, Helvetica, sans-serif ;
+    color: #292642;
+    background: #f2f3f8;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    background: #1c162e;
+}
+
+.nav-contenedor{
+    width: 72%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 125px;
+    height: auto;
+    display: block;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu a{
+    color: #d5d2dc;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.menu a:hover{
+    color: white;
+}
+
+.menu .download{
+    padding: 11px 20px;
+    color: white;
+    background: linear-gradient(to right, #9144df, #007fca);
+}
+/*fondo y telefono*/
+.pagina_con_imagen1{
+    background-color:#2d2448;
+    background-image: url(../assets/images/hojasFondo.jpg);
+    height: 450px;
+    width: 40%;
+    background-position:100%;
+    justify-content: center;
+    display: flex;
+    flex-direction:row-reverse;
+    align-items: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    padding: 110px 90px;
+}
+
+.imagen_celular{
+    display: flex;
+    flex-direction: column;
+    height: 89%;
+    width: 50%;
+    justify-content: left;
+}
+.texto {
+    text-align: center;
+    color: white;
+    width: 400px;
+    height: 20px;
+}
